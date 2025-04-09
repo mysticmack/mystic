@@ -23,12 +23,24 @@ export default function RootLayout({
   return (
     <html lang="en" className="bg-[#0B0B0F]">
       <head>
+        <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#0B0B0F" />
+        <link rel="icon" href="/favicon.ico" />
       </head>
       <body 
         className={`${inter.className} antialiased min-h-screen bg-[#0B0B0F] text-white`}
         style={{ visibility: 'visible', backgroundColor: '#0B0B0F' }}
       >
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              document.documentElement.style.backgroundColor = '#0B0B0F';
+              document.body.style.backgroundColor = '#0B0B0F';
+              document.body.style.color = '#ffffff';
+            `,
+          }}
+        />
         <Navbar />
         <main className="pt-16 min-h-screen">
           {children}

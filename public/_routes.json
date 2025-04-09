@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "include": ["/*"],
+  "exclude": [
+    "/build/*",
+    "/static/*",
+    "/_next/*",
+    "/api/*",
+    "/favicon.ico",
+    "/robots.txt",
+    "/_headers",
+    "/_routes.json"
+  ]
+} 
