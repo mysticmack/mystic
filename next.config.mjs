@@ -3,7 +3,8 @@ const nextConfig = {
   images: {
     unoptimized: true
   },
-  output: 'standalone',
+  // Remove standalone output as it's not needed for Cloudflare Pages
+  // output: 'standalone',
   // Enable static exports for Cloudflare Pages
   experimental: {
     appDir: true
