@@ -6,4 +6,7 @@ publish = "public"
 bucket = "public"
 
 [pages]
-pages_build_output_dir = "public" 
+pages_build_output_dir = "public"
+
+[build.environment]
+NODE_VERSION = "18" 
