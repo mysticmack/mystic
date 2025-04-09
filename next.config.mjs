@@ -8,6 +8,10 @@ const nextConfig = {
   },
   trailingSlash: false,
   distDir: 'out',
+  // Ensure basePath is empty for Cloudflare Pages
+  basePath: '',
+  // Ensure assetPrefix is empty for Cloudflare Pages
+  assetPrefix: '',
 };
 
 export default nextConfig; 

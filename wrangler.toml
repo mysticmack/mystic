@@ -4,13 +4,6 @@ publish = "public"
 
 [site]
 bucket = "public"
-entry-point = "public"
-
-[env.production]
-NODE_ENV = "production"
-
-[env.production.vars]
-NODE_ENV = "production"
 
 [pages]
 pages_build_output_dir = "public" 

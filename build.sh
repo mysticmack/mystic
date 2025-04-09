@@ -25,6 +25,21 @@ echo '{
   "exclude": []
 }' > public/_routes.json
 
+# Create a simple index.html in the root if it doesn't exist
+if [ ! -f public/index.html ]; then
+  echo '<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Mystic</title>
+  <meta http-equiv="refresh" content="0;url=/">
+</head>
+<body>
+  <p>Redirecting to <a href="/">home page</a>...</p>
+</body>
+</html>' > public/index.html
+fi
+
 # List contents of public directory for verification
 echo "Contents of public directory:"
 ls -la public/ 
