@@ -6,6 +6,8 @@ import Navbar from "../components/Navbar";
 const inter = Inter({
   subsets: ["latin"],
   display: 'swap',
+  preload: true,
+  adjustFontFallback: true,
 });
 
 export const metadata: Metadata = {
@@ -20,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} antialiased min-h-screen`}>
+      <body className={`${inter.className} antialiased min-h-screen bg-[#0B0B0F] text-white`}>
         <Navbar />
         <main className="pt-16">
           {children}
