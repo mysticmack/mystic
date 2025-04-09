@@ -1,4 +1,6 @@
 /** @type {import('next').NextConfig} */
+
+// Cloudflare Pages configuration
 const nextConfig = {
   images: {
     unoptimized: true
