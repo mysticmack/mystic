@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "include": [
+    "/*"
+  ],
+  "exclude": [
+    "/build/*",
+    "/static/*",
+    "/_next/*",
+    "/api/*"
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+} 

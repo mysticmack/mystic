@@ -3,4 +3,8 @@ command = "./build.sh"
 publish = "public"
 
 [build.environment]
-NODE_VERSION = "18" 
+NODE_VERSION = "18"
+NODE_ENV = "production"
+
+[site]
+bucket = "public" 

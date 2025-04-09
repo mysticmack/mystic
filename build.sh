@@ -6,11 +6,13 @@ npm install
 # Build the project
 npm run build
 
-# Create the public directory if it doesn't exist
-mkdir -p public
+# Ensure we're using the out directory directly
+rm -rf public
+mv out public
 
-# Copy the output files to the public directory
-cp -r out/* public/
+# Debug: List contents of public directory
+echo "Contents of public directory:"
+ls -la public/
 
 # Create a basic _redirects file for SPA routing
 echo "/* /index.html 200" > public/_redirects 
