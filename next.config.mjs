@@ -3,16 +3,15 @@
 // Cloudflare Pages configuration
 const nextConfig = {
   output: 'export',
+  distDir: 'dist',
   images: {
     unoptimized: true,
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: '**',
-      },
-    ],
+    domains: ['*'],
   },
   trailingSlash: true,
+  basePath: '',
+  reactStrictMode: true,
+  swcMinify: true,
 };
 
 export default nextConfig; 

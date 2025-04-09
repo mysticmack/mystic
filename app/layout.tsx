@@ -21,10 +21,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${inter.className} antialiased min-h-screen bg-[#0B0B0F] text-white`}>
+    <html lang="en" className="bg-[#0B0B0F]">
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </head>
+      <body 
+        className={`${inter.className} antialiased min-h-screen bg-[#0B0B0F] text-white`}
+        style={{ visibility: 'visible', backgroundColor: '#0B0B0F' }}
+      >
         <Navbar />
-        <main className="pt-16">
+        <main className="pt-16 min-h-screen">
           {children}
         </main>
         <footer className="bg-slate-900 text-white py-10">
