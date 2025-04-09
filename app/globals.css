@@ -24,3 +24,242 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Add wave effect to hero section */
+.clip-path-wave {
+  clip-path: polygon(
+    100% 0%,
+    0% 0%,
+    0% 65%,
+    1% 64.95%,
+    2% 64.8%,
+    3% 64.6%,
+    4% 64.3%,
+    5% 63.9%,
+    6% 63.45%,
+    7% 62.9%,
+    8% 62.25%,
+    9% 61.55%,
+    10% 60.8%,
+    11% 59.95%,
+    12% 59.05%,
+    13% 58.1%,
+    14% 57.1%,
+    15% 56.05%,
+    16% 55%,
+    17% 53.9%,
+    18% 52.8%,
+    19% 51.65%,
+    20% 50.5%,
+    21% 49.35%,
+    22% 48.2%,
+    23% 47.05%,
+    24% 45.9%,
+    25% 44.8%,
+    26% 43.75%,
+    27% 42.75%,
+    28% 41.75%,
+    29% 40.8%,
+    30% 39.9%,
+    31% 39.1%,
+    32% 38.35%,
+    33% 37.65%,
+    34% 37.05%,
+    35% 36.5%,
+    36% 36.05%,
+    37% 35.65%,
+    38% 35.35%,
+    39% 35.15%,
+    40% 35%,
+    41% 34.95%,
+    42% 35%,
+    43% 35.15%,
+    44% 35.35%,
+    45% 35.65%,
+    46% 36.05%,
+    47% 36.5%,
+    48% 37.05%,
+    49% 37.65%,
+    50% 38.35%,
+    51% 39.1%,
+    52% 39.9%,
+    53% 40.8%,
+    54% 41.75%,
+    55% 42.75%,
+    56% 43.75%,
+    57% 44.8%,
+    58% 45.9%,
+    59% 47.05%,
+    60% 48.2%,
+    61% 49.35%,
+    62% 50.5%,
+    63% 51.65%,
+    64% 52.8%,
+    65% 53.9%,
+    66% 55%,
+    67% 56.05%,
+    68% 57.1%,
+    69% 58.1%,
+    70% 59.05%,
+    71% 59.95%,
+    72% 60.8%,
+    73% 61.55%,
+    74% 62.25%,
+    75% 62.9%,
+    76% 63.45%,
+    77% 63.9%,
+    78% 64.3%,
+    79% 64.6%,
+    80% 64.8%,
+    81% 64.95%,
+    82% 65%,
+    83% 64.95%,
+    84% 64.8%,
+    85% 64.6%,
+    86% 64.3%,
+    87% 63.9%,
+    88% 63.45%,
+    89% 62.9%,
+    90% 62.25%,
+    91% 61.55%,
+    92% 60.8%,
+    93% 59.95%,
+    94% 59.05%,
+    95% 58.1%,
+    96% 57.1%,
+    97% 56.05%,
+    98% 55%,
+    99% 53.9%,
+    100% 52.8%
+  );
+}
+
+/* Animation keyframes for floating elements */
+@keyframes float-slow {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate(15px, 15px) rotate(5deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+@keyframes float-slow-reverse {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate(-15px, 10px) rotate(-5deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+@keyframes float-medium {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  33% {
+    transform: translate(8px, -8px) rotate(3deg);
+  }
+  66% {
+    transform: translate(-8px, 8px) rotate(-3deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+@keyframes float-quick {
+  0% {
+    transform: translate(0, 0) rotate(0deg) scale(1);
+  }
+  25% {
+    transform: translate(5px, -5px) rotate(2deg) scale(1.05);
+  }
+  50% {
+    transform: translate(0, 10px) rotate(0deg) scale(1);
+  }
+  75% {
+    transform: translate(-5px, 5px) rotate(-2deg) scale(0.95);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg) scale(1);
+  }
+}
+
+@keyframes pulse-slow {
+  0% {
+    opacity: 0.15;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.25;
+    transform: scale(1.15);
+  }
+  100% {
+    opacity: 0.15;
+    transform: scale(1);
+  }
+}
+
+/* Animation utilities */
+.animate-float-slow {
+  animation: float-slow 20s ease-in-out infinite;
+}
+
+.animate-float-slow-reverse {
+  animation: float-slow-reverse 25s ease-in-out infinite;
+}
+
+.animate-float-medium {
+  animation: float-medium 15s ease-in-out infinite;
+}
+
+.animate-float-quick {
+  animation: float-quick 10s ease-in-out infinite;
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 12s ease-in-out infinite;
+}
+
+/* Text animation keyframes */
+@keyframes float-text {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-2px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(2px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Highlight glow animation */
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px rgba(139, 92, 246, 0.5);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(139, 92, 246, 0.8), 0 0 30px rgba(99, 102, 241, 0.5);
+  }
+  100% {
+    text-shadow: 0 0 5px rgba(139, 92, 246, 0.5);
+  }
+}
+
+.text-glow {
+  animation: glow 6s ease-in-out infinite;
+}
