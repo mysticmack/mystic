@@ -2,19 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #0B0B0F;
-  --foreground: #ffffff;
-}
-
 @layer base {
   html {
-    background-color: var(--background);
-    color: var(--foreground);
+    @apply bg-[#0B0B0F] text-white;
   }
   body {
-    background-color: var(--background);
-    color: var(--foreground);
+    @apply bg-[#0B0B0F] text-white min-h-screen;
   }
 }
 
