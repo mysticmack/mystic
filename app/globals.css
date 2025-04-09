@@ -1,4 +1,6 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --background: #ffffff;
@@ -198,8 +200,8 @@ body {
     transform: scale(1);
   }
   50% {
-    opacity: 0.25;
-    transform: scale(1.15);
+    opacity: 0.3;
+    transform: scale(1.05);
   }
   100% {
     opacity: 0.15;
@@ -209,23 +211,23 @@ body {
 
 /* Animation utilities */
 .animate-float-slow {
-  animation: float-slow 20s ease-in-out infinite;
+  animation: float-slow 8s ease-in-out infinite;
 }
 
 .animate-float-slow-reverse {
-  animation: float-slow-reverse 25s ease-in-out infinite;
+  animation: float-slow-reverse 7s ease-in-out infinite;
 }
 
 .animate-float-medium {
-  animation: float-medium 15s ease-in-out infinite;
+  animation: float-medium 6s ease-in-out infinite;
 }
 
 .animate-float-quick {
-  animation: float-quick 10s ease-in-out infinite;
+  animation: float-quick 4s ease-in-out infinite;
 }
 
 .animate-pulse-slow {
-  animation: pulse-slow 12s ease-in-out infinite;
+  animation: pulse-slow 4s ease-in-out infinite;
 }
 
 /* Text animation keyframes */
@@ -233,14 +235,8 @@ body {
   0% {
     transform: translateY(0);
   }
-  25% {
-    transform: translateY(-2px);
-  }
   50% {
-    transform: translateY(0);
-  }
-  75% {
-    transform: translateY(2px);
+    transform: translateY(-5px);
   }
   100% {
     transform: translateY(0);
@@ -253,7 +249,7 @@ body {
     text-shadow: 0 0 5px rgba(139, 92, 246, 0.5);
   }
   50% {
-    text-shadow: 0 0 20px rgba(139, 92, 246, 0.8), 0 0 30px rgba(99, 102, 241, 0.5);
+    text-shadow: 0 0 20px rgba(139, 92, 246, 0.8);
   }
   100% {
     text-shadow: 0 0 5px rgba(139, 92, 246, 0.5);
@@ -261,5 +257,5 @@ body {
 }
 
 .text-glow {
-  animation: glow 6s ease-in-out infinite;
+  animation: glow 2s ease-in-out infinite;
 }
