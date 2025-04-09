@@ -3,10 +3,11 @@
 // Cloudflare Pages configuration
 const nextConfig = {
   output: 'export',
-  trailingSlash: false,
   images: {
-    unoptimized: true
-  }
+    unoptimized: true,
+  },
+  trailingSlash: false,
+  distDir: 'out',
 };
 
 export default nextConfig; 
