@@ -2,10 +2,18 @@
 
 // Cloudflare Pages configuration
 const nextConfig = {
+  output: 'export',
   images: {
-    unoptimized: true
+    unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**',
+      },
+    ],
   },
-  output: 'export' // Enable static exports for Cloudflare Pages
+  trailingSlash: true,
+  assetPrefix: '.',
 };
 
 export default nextConfig; 
