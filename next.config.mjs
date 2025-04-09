@@ -3,7 +3,6 @@
 // Cloudflare Pages configuration
 const nextConfig = {
   output: 'export',
-  distDir: '.next',
   images: {
     unoptimized: true
   }
