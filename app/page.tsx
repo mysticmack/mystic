@@ -31,7 +31,7 @@ export default function Home() {
 
             The resurgence of interest in psychedelic therapies, combined with recent breakthroughs in precision neuromedicine and machine learning, represents an imminent, new wave of transformative mind-body optimization tools.
 
-            Mystic Ventures thus makes targeted investments in early-stage companies at the intersection of biotechnology, AI, and longevity, while ultimately aiming to elevate concsciousness at scale.
+            Mystic Ventures thus makes targeted investments in early-stage companies at the intersection of biotechnology, AI, and longevity, while ultimately aiming to elevate consciousness at scale.
           </p>
         </div>
       </section>
